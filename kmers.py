@@ -17,4 +17,12 @@ def kmer2str(val, k):
 
 def stream_kmers(text, k):
     # --- To complete ---
+    liste_kmers = []
+    for i in range(len(text)-k+1):
+        kmer = text[i:i+k]
+        liste_kmers.append(kmer)
+    return liste_kmers
+
+
+def main():
     pass
