@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from loading import load_directory
 from kmers import stream_kmers, kmer2str
 import pandas as pd
@@ -6,6 +8,11 @@ import pandas as pd
 def jaccard(fileA, fileB, k):
     j = 0
     # --- To complete ---
+    """
+    Prend en entrée les séquences ADN de 2 fichiers
+    et calcule la distance de Jaccard entre ces deux fichiers.
+
+    """
     
     commun = set()
     kmers_A = stream_kmers(fileA[0],k)
